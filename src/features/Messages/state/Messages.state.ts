@@ -1,5 +1,7 @@
-import {IMessagesState} from './Messages.types';
+import { IAuthor } from 'src/store/store.types';
+import { IMessage, IMessagesState } from './Messages.types';
 
 export const MessagesInitialState: IMessagesState = {
-  test: null,
-}
+  author: {} as IAuthor,
+  messages: [] as IMessage[],
+};

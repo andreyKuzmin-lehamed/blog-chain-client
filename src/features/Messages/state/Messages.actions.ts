@@ -1,13 +1,13 @@
 import { PayloadAction } from '@reduxjs/toolkit';
-import { IMessagesState } from './Messages.types';
+import { IMessage, IMessagesState } from './Messages.types';
 
-function testAction(
+function setMessages(
   state: IMessagesState,
-  { payload: testArg }: PayloadAction<any>
+  { payload: messages }: PayloadAction<IMessage[]>
 ) {
-  state.test = testArg;
+  state.messages = messages;
 }
 
 export const MessagesReducers = {
-  testAction,
-}
+  setMessages,
+};
