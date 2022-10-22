@@ -1,0 +1,1 @@
+export type AsyncThunkStatusType = 'idle' | 'pending' | 'fulfilled' | 'rejected' | 'canceled'
