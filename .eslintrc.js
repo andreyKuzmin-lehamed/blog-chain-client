@@ -12,7 +12,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    'plugin:storybook/recommended',
   ],
   parser: '@typescript-eslint/parser',
   settings: {
@@ -22,7 +21,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.stories.*'],
+      files: [''],
       rules: {
         'import/no-anonymous-default-export': 'off',
       },

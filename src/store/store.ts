@@ -1,10 +1,12 @@
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
 import routerDataReducer from './../plugins/router/state/router.slice';
+import MessagesDataReducer from './../features/Messages/state/Messages.slice';
 //DO_NOT_DELETE_THIS_STRING__IMPORT
 
 export const store = configureStore({
   reducer: {
     routerData: routerDataReducer,
+    MessagesData: MessagesDataReducer,
     //DO_NOT_DELETE_THIS_STRING__REDUCER
   },
 });
